@@ -3,6 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Antique Hub | Timeless Heritage Pieces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0f0f0f; color: #f3f4f6; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        /* Top Bar */
+        .top-bar { background-color: #1a1a1a; padding: 10px 20px; text-align: center; font-size: 0.85rem; color: #9ca3af; border-bottom: 1px solid #262626; letter-spacing: 0.5px; }
+        
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #141414; border-bottom: 1px solid #262626; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #d4af37; letter-spacing: 1px; text-transform: uppercase; }
+        .nav-links { display: flex; gap: 25px; list-style: none; }
+        .nav-links a { color: #d1d5db; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #d4af37; }
+
+        /* Hero Banner */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('WhatsApp Image 2026-10-13 at 1.42.26 AM.jpeg') center/cover no-repeat; text-align: center; padding: 80px 20px; border-bottom: 1px solid #262626; }
+        .hero h1 { font-size: 3rem; font-weight: 700; color: #fff; margin-bottom: 12px; letter-spacing: 1px; }
+        .hero h1 span { color: #d4af37; }
+        .hero p { color: #9ca3af; font-size: 1.15rem; max-width: 600px; margin: 0 auto; font-weight: 300; }
+
+        /* Main Container */
+        .container { max-width: 1400px; margin: 40px auto; padding: 0 30px; }
+        
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 1px solid #262626; padding-bottom: 15px; }
+        .section-title { font-size: 1.5rem; font-weight: 600; color: #fff; }
+        .product-count { color: #9ca3af; font-size: 0.95rem; }
+
+        /* Product Grid */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+        
+        .product-card { background-color: #161616; border: 1px solid #262626; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s ease, border-color 0.3s ease; }
+        .product-card:hover { transform: translateY(-5px); border-color: #d4af37; }
+        
+        .image-container { position: relative; width: 100%; height: 280px; background-color: #000; overflow: hidden; }
+        .product-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .product-card:hover img { transform: scale(1.05); }
+        
+        .product-info { padding: 20px; }
+        .category-tag { font-size: 0.75rem; text-transform: uppercase; color: #d4af37; font-weight: 600; letter-spacing: 1px; margin-bottom: 6px; }
+        .product-title { color: #fff; font-size: 1.05rem; font-weight: 600; margin-bottom: 10px; line-height: 1.4; height: 45px; overflow: hidden; }
+        .product-price { color: #d4af37; font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; }
+        
+        .whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; background-color: #25D366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: background-color 0.2s; }
+        .whatsapp-btn:hover { background-color: #20ba5a; }
+
+        /* Footer */
+        footer { background-color: #141414; color: #9ca3af; text-align: center; padding: 40px 20px; margin-top: 80px; border-top: 1px solid #262626; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        ✨ Welcome to The Antique Hub Lahore — Handcrafted Luxury & Heritage Masterpieces
+    </div>
+
+    <nav>
+        <div class="logo">The Antique Hub</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Timeless Treasures & <span>Heritage Pieces</span></h1>
+        <p>Explore exclusive vintage artifacts curated specifically for sophisticated modern spaces.</p>
+    </header>
+
+    <div class="container">
+        <div class="section-header">
+            <div class="section-title">Exclusive Collection</div>
+            <div class="product-count">28 Products Found</div>
+        </div>
+        
+        <div class="gallery">
+            <!-- 1 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.26 AM.jpeg" alt="Silver Sitting Buddha Statue with Bowl">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Statue & Decor</div>
+                    <div class="product-title">Silver Sitting Buddha Statue with Bowl</div>
+                    <div class="product-price">Rs. 35,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Silver%20Sitting%20Buddha%20Statue%20with%20Bowl" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.27 AM (1).jpeg" alt="Lady Justice / Bronze Goddess Statue">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Statue & Decor</div>
+                    <div class="product-title">Lady Justice / Bronze Goddess Statue</div>
+                    <div class="product-price">Rs. 18,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Lady%20Justice%20Bronze%20Goddess%20Statue" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.27 AM.jpeg" alt="Large Engraved Brass Surahi / Pitcher">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Brass Artifacts</div>
+                    <div class="product-title">Large Engraved Brass Surahi / Pitcher</div>
+                    <div class="product-price">Rs. 35,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Large%20Engraved%20Brass%20Surahi%20Pitcher" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.28 AM.jpeg" alt="3-Piece Vintage Brass Tea Set">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Vintage Sets</div>
+                    <div class="product-title">3-Piece Vintage Brass Tea Set</div>
+                    <div class="product-price">Rs. 35,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%203-Piece%20Vintage%20Brass%20Tea%20Set" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.29 AM (1).jpeg" alt="Engraved Brass Fish-Pattern Pitcher">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Brass Artifacts</div>
+                    <div class="product-title">Engraved Brass Fish-Pattern Pitcher</div>
+                    <div class="product-price">Rs. 22,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Engraved%20Brass%20Fish-Pattern%20Pitcher" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.29 AM.jpeg" alt="Hand-Painted Birds Enamel Brass Decorative Plate">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Decorative Plates</div>
+                    <div class="product-title">Hand-Painted Birds Enamel Brass Decorative Plate</div>
+                    <div class="product-price">Rs. 12,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Hand-Painted%20Birds%20Enamel%20Brass%20Decorative%20Plate" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.30 AM (1).jpeg" alt="Large Rectangular Engraved Brass Tray">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Brass Trays</div>
+                    <div class="product-title">Large Rectangular Engraved Brass Tray</div>
+                    <div class="product-price">Rs. 18,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Large%20Rectangular%20Engraved%20Brass%20Tray" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.30 AM.jpeg" alt="Floral Open-Work Decorative Brass Plate">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Decorative Plates</div>
+                    <div class="product-title">Floral Open-Work Decorative Brass Plate</div>
+                    <div class="product-price">Rs. 15,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Floral%20Open-Work%20Decorative%20Brass%20Plate" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.31 AM (1).jpeg" alt="Colorful Meenakari Peacock Design Brass Bowl">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Meenakari Art</div>
+                    <div class="product-title">Colorful Meenakari Peacock Design Brass Bowl</div>
+                    <div class="product-price">Rs. 24,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Colorful%20Meenakari%20Peacock%20Design%20Brass%20Bowl" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.31 AM.jpeg" alt="Vintage Spherical Brass Ashtray">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Vintage Collectibles</div>
+                    <div class="product-title">Vintage Spherical Brass Ashtray</div>
+                    <div class="product-price">Rs. 8,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Vintage%20Spherical%20Brass%20Ashtray" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.32 AM.jpeg" alt="Carved Bone / Ivory-Style Totem Figurine">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Rare Figurines</div>
+                    <div class="product-title">Carved Bone / Ivory-Style Totem Figurine</div>
+                    <div class="product-price">Rs. 8,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Carved%20Bone%20Ivory-Style%20Totem%20Figurine" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.33 AM (1).jpeg" alt="Antique Patinated Buddha Statue with Spire">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Statue & Decor</div>
+                    <div class="product-title">Antique Patinated Buddha Statue with Spire</div>
+                    <div class="product-price">Rs. 65,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Antique%20Patinated%20Buddha%20Statue%20with%20Spire" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.33 AM.jpeg" alt="Engraved Brass Pot / Vase">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Brass Artifacts</div>
+                    <div class="product-title">Engraved Brass Pot / Vase</div>
+                    <div class="product-price">Rs. 12,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Engraved%20Brass%20Pot%20Vase" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.34 AM (1).jpeg" alt="Painted Brass Pot / Jar">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Brass Artifacts</div>
+                    <div class="product-title">Painted Brass Pot / Jar (Blue & White Floral Motif)</div>
+                    <div class="product-price">Rs. 12,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Painted%20Brass%20Pot%20Jar" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.34 AM.jpeg" alt="Antique Dragon-Spout Brass Teapot">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Vintage Collectibles</div>
+                    <div class="product-title">Antique Dragon-Spout Brass Teapot / Pitcher</div>
+                    <div class="product-price">Rs. 45,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Antique%20Dragon-Spout%20Brass%20Teapot" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.35 AM (1).jpeg" alt="Brass Eagle Statue on Wooden Base">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Statue & Decor</div>
+                    <div class="product-title">Brass Eagle Statue on Wooden Base</div>
+                    <div class="product-price">Rs. 25,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Brass%20Eagle%20Statue" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 17 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.35 AM.jpeg" alt="Meenakari Blue & White Royal Surahi">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Meenakari Art</div>
+                    <div class="product-title">Meenakari Blue & White Royal Surahi / Pitcher</div>
+                    <div class="product-price">Rs. 45,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Meenakari%20Blue%20White%20Royal%20Surahi" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 18 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.36 AM (1).jpeg" alt="Tall Slender Engraved Brass Dallah">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Brass Artifacts</div>
+                    <div class="product-title">Tall Slender Engraved Brass Dallah / Teapot</div>
+                    <div class="product-price">Rs. 17,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Tall%20Slender%20Engraved%20Brass%20Dallah" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 19 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.36 AM.jpeg" alt="Multicolor Hand-Painted Ceramic Covered Urn">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Ceramic Art</div>
+                    <div class="product-title">Multicolor Hand-Painted Ceramic Covered Urn</div>
+                    <div class="product-price">Rs. 18,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Multicolor%20Hand-Painted%20Ceramic%20Covered%20Urn" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 20 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.37 AM (1).jpeg" alt="Ornate Engraved Brass Shield">
+                </div>
+                <div class="product-info">
+                    <div class="category-tag">Wall Decor</div>
+                    <div class="product-title">Ornate Engraved Brass Shield / Wall Plaque</div>
+                    <div class="product-price">Rs. 45,000</div>
+                    <a href="https://wa.me/?text=I%20am%20interested%20in%20Ornate%20Engraved%20Brass%20Shield" class="whatsapp-btn" target="_blank">Buy on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 21 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-10-13 at 1.42.37 AM.jpeg" alt="Wildlife Landscape Tapestry Wall Hanging">
+                </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Antique Hub | Timeless Treasures</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
